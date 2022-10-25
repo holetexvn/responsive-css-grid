@@ -58,3 +58,25 @@ body {
 .article {
   border: 5px solid rgb(255, 0, 106);
 }
+
+@media (max-width: 900px) {
+  .item-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-rows: 100px 300px 200px 200px 100px;
+    grid-template-areas: 
+    "header header header"
+    "content content content"
+    "content content content"
+    "sidebar sidebar sidebar"
+    "footer footer footer";
+  }
+
+  .item-3 {
+    grid-template-columns: 1fr;
+  }
+}

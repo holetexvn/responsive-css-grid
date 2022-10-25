@@ -46,7 +46,7 @@ body {
   grid-area: content;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   column-gap: 5px;
   row-gap: 5px;
 }
@@ -59,11 +59,11 @@ body {
   border: 5px solid rgb(255, 0, 106);
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .item-3 {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
 @media (max-width: 600px) {
   .container {
@@ -76,7 +76,7 @@ body {
     "footer footer footer";
   }
 
-  .item-3 {
+  /* .item-3 {
     grid-template-columns: 1fr;
-  }
+  } */
 }

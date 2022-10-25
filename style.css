@@ -5,5 +5,36 @@
 }
 
 body {
-  padding: 20px;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 5px;
+  row-gap: 5px;
+
+  /* grid-auto-flow: column;
+  grid-auto-columns: minmax(200px, 1fr); */
+}
+
+.col {
+  border: 2px solid green;
+  background-color: antiquewhite;
+  padding: 5px;
+}
+
+.col p {
+  font-weight: bold;
+  margin-bottom: 5px
+}
+
+.col .cards {
+  display: grid;
+  row-gap: 5px;
+}
+
+.article {
+  border: 2px solid gray;
 }
